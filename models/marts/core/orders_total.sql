@@ -1,1 +1,2 @@
-select sum(number_of_orders) from {{ ref('dim_customers') }} as orders_total
+select sum(number_of_orders) as orders_total
+from {{ ref("dim_customers") }} 
